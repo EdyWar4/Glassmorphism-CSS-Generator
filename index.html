@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css/normalize.css"/>      
+        <link rel="stylesheet" href="./styles.css/style.css"/>  
+        <title>Generador / EdgarDev</title>
+    </head>
+    <body>
+        <div  class ="h1">
+        <h1>Personaliza tu Glasmorfismo </h1>
+        </div>
+        <main>
+            <section>
+                <label for="color">Cambiar color</label>
+                <input type="color" id="color" value="#FFFFFF"/>
+                <label for="opacidad">Opacidad</label>
+                <input type="range" id="opacidad" value="20" data-unit="%"/>
+                <span>0</span>
+                <label for="difuminado">Difuminación</label>
+                <input type="range" id="difuminado" value=40" min="0" max="150" data-unit="px"/>
+                <span>0</span>
+                <label for="contraste">Contraste</label>
+                <input type="range" id="contraste" value="60" data-unit="%"/>
+                <span>0</span>
+                <label for="brillo">Brillo</label>
+                <input type="range" id="brillo" value="80" data-unit="%"/>
+                <span>0</span>
+                <label for="saturacion">Saturación</label>
+                <input type="range" id="saturacion" value="40" data-unit="%"/>
+                <span>0</span>
+                <label for="tamaño">Tamaño</label>
+                <input type="range" id="tamaño" min="0" max="400" data-unit="px"/>
+                <span>0</span>
+                <label for="borde">Radio del Borde</label>
+                <input type="range" id="borde" min="0" max="50" data-unit="%"/>
+                <span>0</span>
+            </section>
+            <pre class ="pre"><h2>Código CSS</h2><code id="containerCode"></code></pre>
+            <div id="box"></div>
+        </main>
+        <script type="module" src="./scripts/index.js"></script>
+    </body>
+</html>
